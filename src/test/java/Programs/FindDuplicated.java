@@ -49,7 +49,7 @@ public class FindDuplicated {
     }
     public static void main(String[] args) {
         FindDuplicated fd = new FindDuplicated();
-//        fd.findDuplicateString1();
-        fd.findDuplicateString2();
+        fd.findDuplicateString1();
+//        fd.findDuplicateString2();
     }
 }
