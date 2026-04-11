@@ -76,10 +76,11 @@ public class Practice6 {
             for (int j=i+1;j<str.length();j++){
                 if (ch[i]==ch[j]){
                     count++;
+                    ch[j]=0;
                 }
             }
             if(count>1&&ch[i]!=0){
-                System.out.println(ch[i]);
+                System.out.println(ch[i]+" ");
             }
         }
     }
