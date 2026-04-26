@@ -1,8 +1,7 @@
 package Programs;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.time.temporal.ChronoField;
+import java.util.*;
 
 public class FindDuplicated {
 
@@ -47,9 +46,21 @@ public class FindDuplicated {
             }
         }
     }
+    public void findDuplicate3(){
+        String name="Programming";
+        Set<Character>set1=new LinkedHashSet<>();
+        Set<Character>set2=new LinkedHashSet<>();
+        for (char ch:name.toCharArray()){
+            if (!set1.add(ch)){
+                set2.add(ch);
+            }
+        }
+        System.out.println(set2);
+    }
     public static void main(String[] args) {
         FindDuplicated fd = new FindDuplicated();
-        fd.findDuplicateString1();
+//        fd.findDuplicateString1();
 //        fd.findDuplicateString2();
+        fd.findDuplicate3();
     }
 }
